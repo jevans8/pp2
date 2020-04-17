@@ -26,11 +26,22 @@ error_reporting(E_ALL);
 <?php
 
 //1.
-echo "PHP Array Practice";
+echo "<p>PHP Array Practice</p>";
 
 //2.
+/*Define an array $numbers, which contains 7, 9, 8, 9, 8, 8, 6. In the same PHP block, write a function printArr() that
+takes an array as a parameter and prints the array, one item per line. Call your function and pass it the $numbers
+array. Test your code and then commit your changes.*/
 
+$numbers = array(7, 9, 8, 9, 8, 8, 6);
 
+function printArr($array){
+    foreach($array as $item){
+        echo "$item<br>";
+    }
+}
+
+printArr($numbers);
 
 
 ?>
