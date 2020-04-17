@@ -35,12 +35,12 @@ array. Test your code and then commit your changes.*/
 
 $numbers = array(7, 9, 8, 9, 8, 8, 6);
 
-function printArr($array){
-    foreach($array as $item){
-        echo "$item<br>";
-    }
-}
+//3.
+/*Move your print function into an include file called functions.php in the same directory. Make sure it still works.
+Commit your changes. This time you will need to add two files to the staging area, because both files have changed:
+functions.php and index.php. You only need one commit and one push.*/
 
+include('functions.php');
 printArr($numbers);
 
 
