@@ -49,6 +49,14 @@ largest value in the array. Test the function in your index page, and then commi
 
 echo "Largest number: " . largest($numbers) . "<br>";
 
+//5.
+/*In your functions file, define a function called removeDups() that takes an array as a parameter and returns an
+array with duplicates removed. So, given the $numbers array, removeDups() would return [7, 9, 8, 6].
+(Order doesn’t matter.) Test the function from your index page. Commit your changes.*/
+
+echo "New array:<br>";
+echo printArr(removeDups($numbers)) . "<br>";
+
 
 ?>
 </body>
