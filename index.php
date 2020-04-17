@@ -43,6 +43,12 @@ functions.php and index.php. You only need one commit and one push.*/
 include('functions.php');
 printArr($numbers);
 
+//4.
+/*In your functions file, define a function called largest() that takes an array as a parameter and returns the
+largest value in the array. Test the function in your index page, and then commit your changes.*/
+
+echo "Largest number: " . largest($numbers) . "<br>";
+
 
 ?>
 </body>
