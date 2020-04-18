@@ -47,16 +47,31 @@ printArr($numbers);
 /*In your functions file, define a function called largest() that takes an array as a parameter and returns the
 largest value in the array. Test the function in your index page, and then commit your changes.*/
 
-echo "Largest number: " . largest($numbers) . "<br>";
+echo "<p>Largest number:</p>";
+echo largest($numbers);
 
 //5.
 /*In your functions file, define a function called removeDups() that takes an array as a parameter and returns an
 array with duplicates removed. So, given the $numbers array, removeDups() would return [7, 9, 8, 6].
 (Order doesn’t matter.) Test the function from your index page. Commit your changes.*/
 
-echo "New array:<br>";
-echo printArr(removeDups($numbers)) . "<br>";
+echo "<p>New array:</p>";
+echo printArr(removeDups($numbers));
 
+//6.
+/*In your include file, define a function called distribution() that takes an array as a parameter and returns an
+associative array with each value from the original array, and the number of times that value occurs in the original
+array. The keys should be sorted.
+
+So, given the $numbers array:  [7, 9, 8, 9, 8, 8, 6]
+distribution() would return [6=>1, 7=>1, 8=>3, 9=>2]
+
+Test the function from your index page. Commit your changes.*/
+
+echo "<p>Associative array:</p>";
+echo "<pre>";
+echo print_r(distribution($numbers));
+echo "</pre>";
 
 ?>
 </body>
